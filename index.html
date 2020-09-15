@@ -36,6 +36,15 @@
     <meta name="twitter:image"
         content="https://meucasoriomarketplace.s3.amazonaws.com/platformimage/bbb8c0bc-logo-tudopracasar.webp">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178020453-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178020453-1');
+    </script>
 
 
     <!-- Global site tag (gtag.js) - Google Ads: 607300927 -->
@@ -62,7 +71,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -114,10 +123,10 @@
     </div>
     <script>
         //setando a data
-        var countDownDate = new Date("Sep 20, 2020 00:00:00").getTime();
+        var countDownDate = new Date("Sep 20, 2020 12:00:00").getTime();
 
         //update countdown a cada 1 segundo
-        var countDownFunction = setInterval(function(){
+        var countDownFunction = setInterval(function () {
             var now = new Date().getTime();
 
             //Distancia entre o countdown e a data atual
@@ -129,13 +138,13 @@
             var seconds = Math.floor((distance % (1000 * 60)) / (1000));
 
             document.getElementById("countD").innerHTML = days + "d " + hours + "h " +
-            minutes + "m " + seconds + "s ";
+                minutes + "m " + seconds + "s ";
 
-            if(distance < 0){
+            if (distance < 0) {
                 clearInterval(countDownFunction);
                 document.getElementById("countD").innerHTML = "Chegou o grande dia!"
-            }            
-        },1000);
+            }
+        }, 1000);
     </script>
 
 </body>
